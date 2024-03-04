@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation "Maîtrisez les secrets pour gagner de l'argent en ligne en 2024"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formation "Maîtrisez les secrets pour gagner de l'argent en ligne en 2024"</h1>
+    </header>
+    <section id="introduction">
+        <video src="3 - Introduction.mp4" controls muted autoplay style="width: 80%;margin-left: 10%;"></video>
+        <p>Bienvenue dans la formation "Maîtrisez les secrets pour gagner de l'argent en ligne en 2024" ! Êtes-vous prêt à découvrir les stratégies les plus efficaces pour tirer profit des opportunités en ligne cette année ? Cette formation vous fournira les connaissances, les outils et les techniques nécessaires pour réussir à générer des revenus sur internet.</p>
+    </section>
+    <section id="contenu">
+        <h2>Contenu de la formation</h2>
+        <ul>
+            <li><strong>Module 1:</strong> Introduction au monde en ligne en 2024</li>
+            <li><strong>Module 2:</strong> Stratégies de monétisation efficaces</li>
+            <li><strong>Module 3:</strong> Construction d'une présence en ligne rentable</li>
+            <li><strong>Module 4:</strong> Maximisation des revenus et expansion</li>
+        </ul>
+    </section>
+    <section id="pourquoi">
+        <h2>Pourquoi choisir notre formation</h2>
+        <ul>
+            <li>Des stratégies actualisées pour l'année 2024</li>
+            <li>Des conseils pratiques et concrets basés sur l'expérience</li>
+            <li>Un accompagnement personnalisé pour vous guider tout au long du processus</li>
+            <li>Des ressources supplémentaires exclusives pour approfondir vos connaissances</li>
+        </ul>
+    </section>
+    <section id="temoignages">
+        <h2>Témoignages de participants</h2>
+        <blockquote>
+            <p>"Grâce à cette formation, j'ai pu transformer ma passion en une source de revenus stable en ligne. Les conseils étaient précieux et m'ont aidé à éviter les erreurs courantes." - Laura, entrepreneure</p>
+        </blockquote>
+        <blockquote>
+            <p>"Je recommande vivement cette formation à tous ceux qui veulent réussir dans le monde en ligne en constante évolution. C'est un investissement qui en vaut la peine !" - Marc, blogueur</p>
+        </blockquote>
+    </section>
+    <section id="offre">
+        <h2>Offre spéciale</h2>
+        <p>Inscrivez-vous dès maintenant et bénéficiez d'une réduction de 50% <span style="color: red;" id="typedtext"></span> sur le prix de la formation ! Ne manquez pas cette opportunité de démarrer votre parcours vers le succès en ligne en 2024.</p>
+        <button><a href="https://t.me/B_MILLIARDAIRE"> Inscrivez-vous maintenant </a></button>
+    </section>
+   
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="#">ACCEUIL</a></li>
+                    <li><a href="#">FORMATION EN MARKETING DIGITAL</a></li>
+                    <li><a href="#">FORMATION EN PACK OFFICE</a></li>
+                    <li><a href="#">FORMATION EN GRAPHISTE</a></li>
+                    <li><a href="#">FORMATION EN DEVELOPPEMENT WEB FULL STACK</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Contactez-nous</h3>
+                <p>Email: bomissobaudelaire@gmail.com</p>
+                <p>Téléphone: +225 0779456087</p>
+                <p>Page youtube | facebook | instagram | telegram</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+<script>
+    // set up text to print, each item in array is new line
+var aText = new Array(
+"(15$ au lieu de 30$)"
+);
+var iSpeed = 100; // time delay of print out
+var iIndex = 0; // start printing array at this posision
+var iArrLength = aText[0].length; // the length of the text array
+var iScrollAt = 20; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 500);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
+
+
+typewriter();
+</script>
+</html>
